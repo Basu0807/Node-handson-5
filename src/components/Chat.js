@@ -12,7 +12,7 @@ const [message, setMessage] = useState('');
       console.log(message);
       setMessages([...messages, message]);
     });
-  }, [messages]);
+  }, [messages,socket]);
 
   const handleMessageSubmit = (e) => {
     e.preventDefault();
